@@ -16,7 +16,7 @@ export default function ProfileSection() {
         </div>
       </div>
       <h1 className="profile-name">Vini Hundlani</h1>
-      <p className="profile-title">Backend engineer | passionate about building scalable systems</p>
+      <p className="profile-title">Software engineer | passionate about building scalable systems</p>
     </div>
   )
 }
