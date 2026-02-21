@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import CertificateModal from './CertificateModal'
 
+const base = import.meta.env.BASE_URL
 const certifications = [
-  { name: 'AWS Solutions Architect', issuer: 'AWS', year: '2024', certificateImage: '/certificates/aws.png', icon: '/aws.svg' },
-  { name: 'Foundations of Cyber Security ', issuer: 'Google', year: '2024', certificateImage: '/certificates/cyber-security.png', icon: '/cybersecurity.svg' },
-  { name: 'Mastering Agentic AI and MCP ', issuer: 'Google', year: '2024', certificateImage: '/certificates/cyber-security.png', icon: '/ai.svg' },
-
+  { name: 'AWS Solutions Architect', issuer: 'AWS', year: '2024', certificateImage: `${base}certificates/aws.png`, icon: `${base}aws.svg` },
+  { name: 'Foundations of Cyber Security ', issuer: 'Google', year: '2024', certificateImage: `${base}certificates/cyber-security.png`, icon: `${base}cybersecurity.svg` },
+  { name: 'Mastering Agentic AI and MCP ', issuer: 'Google', year: '2024', certificateImage: `${base}certificates/cyber-security.png`, icon: `${base}ai.svg` },
 ]
 
 export default function CertificationCard() {

@@ -3,7 +3,7 @@ export default function ProfileSection() {
     <div className="card profile-card">
       <div className="profile-image-container">
         <img 
-          src="/profile.jpg" 
+          src={`${import.meta.env.BASE_URL}profile.jpg`} 
           alt="Vini Hundlani" 
           className="profile-image"
           onError={(e) => {
@@ -12,7 +12,7 @@ export default function ProfileSection() {
           }}
         />
         <div className="profile-image-placeholder" style={{ display: 'none' }}>
-         <img src="/profile.JPG" alt="Vini Hundlani" className="profile-image" />
+         <img src={`${import.meta.env.BASE_URL}profile.JPG`} alt="Vini Hundlani" className="profile-image" />
         </div>
       </div>
       <h1 className="profile-name">Vini Hundlani</h1>

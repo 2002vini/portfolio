@@ -25,7 +25,7 @@ export default function RightContent() {
         </div>
         <div className="hero-illustration-wrap">
           <img
-            src="/banner.jpeg"
+            src={`${import.meta.env.BASE_URL}banner.jpeg`}
             alt=""
             className="hero-illustration bounce-translation"
           />

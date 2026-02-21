@@ -4,7 +4,7 @@ const publications = [
     venue: 'Security and Privacy in AI',
     year: '2024',
     link: 'https://onlinelibrary.wiley.com/doi/10.1002/spy2.343',
-    image: '/metahate-logo.png',
+    image: `${import.meta.env.BASE_URL}metahate-logo.png`,
     imageAlt: 'MetaHate logo',
     description: 'MetaHate is an AI- and blockchain-powered framework designed to detect and prevent hate speech in metaverse gaming, improving moderation efficiency, community safety, and inclusivity in large-scale multiplayer environments. ',
   },

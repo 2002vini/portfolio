@@ -8,7 +8,7 @@ export default function AboutMe() {
       <div className="detail-section-card">
         <div className="detail-entry">
           <div className="detail-entry-left">
-          <img src="/about_me.jpg" alt="Me" className="detail-entry-image" />
+          <img src={`${import.meta.env.BASE_URL}about_me.jpg`} alt="Me" className="detail-entry-image" />
           </div>
           <div className="detail-entry-right">
             <p className="detail-entry-desc">
