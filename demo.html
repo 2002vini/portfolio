@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Maze Navigation</title>
+
+<style>
+    body{
+        background:#111;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        margin:0;
+        font-family:Arial, sans-serif;
+    }
+
+    svg{
+        width:700px;
+        max-width:95vw;
+    }
+
+    .zone{
+        fill:#222;
+        stroke:#00ffcc;
+        stroke-width:3;
+        cursor:pointer;
+        transition:0.3s;
+    }
+
+    .zone:hover{
+        fill:#00ffcc;
+        stroke:#fff;
+    }
+
+    text{
+        fill:white;
+        font-size:16px;
+        pointer-events:none;
+        font-weight:bold;
+    }
+</style>
+</head>
+
+<body>
+
+<svg viewBox="0 0 600 600">
+
+<!-- Maze walls -->
+<path d="
+M50 50 H550 V550 H50 Z
+M150 50 V450
+M250 150 H550
+M350 50 V350
+M150 350 H450
+M250 450 H550
+" stroke="#00ffcc" stroke-width="6" fill="none"/>
+
+<!-- Clickable Zones -->
+
+<a href="/education">
+<rect class="zone" x="60" y="60" width="120" height="80"/>
+<text x="80" y="105">Education</text>
+</a>
+
+<a href="/projects">
+<rect class="zone" x="420" y="60" width="120" height="80"/>
+<text x="445" y="105">Projects</text>
+</a>
+
+<a href="/achievements">
+<rect class="zone" x="420" y="470" width="120" height="80"/>
+<text x="430" y="515">Achievements</text>
+</a>
+
+<a href="/experience">
+<rect class="zone" x="60" y="470" width="120" height="80"/>
+<text x="70" y="515">Experience</text>
+</a>
+
+<a href="/blogs">
+<rect class="zone" x="240" y="260" width="120" height="80"/>
+<text x="270" y="305">Blogs</text>
+</a>
+
+</svg>
+
+</body>
+</html>
