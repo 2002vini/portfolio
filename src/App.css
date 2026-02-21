@@ -199,7 +199,7 @@
   height: auto;
   max-height: 300px;
   object-fit: contain;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 .detail-entry-image {
   width: 100%;
@@ -1057,6 +1057,11 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .detail-entry-title {
