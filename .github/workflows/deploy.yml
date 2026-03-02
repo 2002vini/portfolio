@@ -22,9 +22,9 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
-        env:
-          VITE_BASE_PATH: /
+        run: |
+          export VITE_BASE_PATH=/
+          npm run build
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
