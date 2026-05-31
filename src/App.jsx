@@ -2,6 +2,7 @@ import { useState } from 'react'
 import LeftSidebar from './components/LeftSidebar'
 import RightContent from './components/RightContent'
 import RightNav from './components/RightNav'
+import ChatBot from './components/ChatBot'
 import './App.css'
 
 export default function App() {
@@ -38,6 +39,7 @@ export default function App() {
         <RightContent />
         <RightNav />
       </div>
+      <ChatBot />
     </div>
   )
 }
